@@ -1,0 +1,12 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<p>Nous sommes la pour enregistrer un groupe</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Enregistrer">
+    </form>
+
+{% endblock %}

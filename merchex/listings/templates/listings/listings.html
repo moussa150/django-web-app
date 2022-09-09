@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Liste des annonces 
+        </title>
+    </head>
+    <body>
+        <h1>Page listings</h1>
+        <p>Voici la liste des listings:</p>
+        <ul>
+            {% for anc in ancs %}
+            <li>{{anc.titre}}</li>
+            {% endfor %}
+            
+        </ul>
+    </body>
+</html>
